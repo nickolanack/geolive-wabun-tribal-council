@@ -1,0 +1,2209 @@
+{
+    "plugin.1": {
+        "name": "Activity Monitor",
+        "instance": "ActivityMonitor",
+        "parameters": {}
+    },
+    "plugin.2": {
+        "name": "Attributes",
+        "instance": "Attributes",
+        "parameters": {},
+        "attributes": "plugin.Attributes.2.attributes.json"
+    },
+    "plugin.3": {
+        "name": "Version Manager",
+        "instance": "VersionManager",
+        "parameters": {}
+    },
+    "plugin.23": {
+        "name": "Upgrade",
+        "instance": "Upgrade",
+        "parameters": {
+            "releaseServer": "http:\/\/release.geolive.ca",
+            "releasePackage": "master",
+            "autoUpdate": false
+        }
+    },
+    "plugin.5": {
+        "name": "Data Types",
+        "instance": "Data",
+        "parameters": {}
+    },
+    "plugin.6": {
+        "name": "System Parameters",
+        "instance": "SystemParameters",
+        "parameters": {
+            "JSFileObfuscationEnabled": false,
+            "JSInlineObfuscationEnabled": false,
+            "CSSFileObfuscationEnabled": false,
+            "CSSInlineObfuscationEnabled": false,
+            "PHPDebugEnabled": true,
+            "JSDebugEnabled": true,
+            "CachingEnabled": false,
+            "PrettyPrintJson": true,
+            "JSCacheObfuscationEnabled": false,
+            "phase": "production",
+            "ExternalizeWidgetScripts": true
+        }
+    },
+    "plugin.25": {
+        "name": "Firelight",
+        "instance": "Firelight",
+        "parameters": {
+            "customFormCss": ".cp-section-title {\r\n  color: coral;\r\n  font-size: 30px;\r\n}\r\n\r\n.uitextlabel .label-inner {\r\n  color: cornflowerblue;\r\n  font-size: 11px;\r\n  background-color: transparent;\r\n}"
+        }
+    },
+    "plugin.8": {
+        "name": "Discussions",
+        "instance": "Discussions",
+        "parameters": {}
+    },
+    "plugin.15": {
+        "name": "External Content",
+        "instance": "ExternalContent",
+        "parameters": {
+            "youtube-api-key": "XXXX-XXXX"
+        }
+    },
+    "plugin.16": {
+        "name": "Consent Form",
+        "instance": "ConsentForm",
+        "parameters": {}
+    },
+    "plugin.11": {
+        "name": "Filesystem",
+        "instance": "Filesystem",
+        "parameters": {}
+    },
+    "plugin.12": {
+        "name": "Maps",
+        "instance": "Maps",
+        "parameters": {
+            "enableLayerSyncronization": false
+        }
+    },
+    "plugin.13": {
+        "name": "Users",
+        "instance": "Users",
+        "parameters": {
+            "customUserGroups": [
+                "community-member",
+                "lands-department",
+                "proponent",
+                "no-role"
+            ],
+            "customUserScript": "plugin.Users.13.customUserScript.js",
+            "customGroupMemberOfGroupScript": "plugin.Users.13.customGroupMemberOfGroupScript.js"
+        }
+    },
+    "plugin.17": {
+        "name": "Google Maps",
+        "instance": "GoogleMaps",
+        "parameters": {}
+    },
+    "plugin.20": {
+        "name": "Auto Attributes",
+        "instance": "AutoAttributes",
+        "parameters": {}
+    },
+    "plugin.22": {
+        "name": "Integration Testing",
+        "instance": "UnitTest",
+        "parameters": {}
+    },
+    "plugin.24": {
+        "name": "User Interface",
+        "instance": "UserInterface",
+        "parameters": {}
+    },
+    "plugin.28": {
+        "name": "Email Ownership",
+        "instance": "EmailOwnership",
+        "parameters": {
+            "emailNotificationTemplate": "<div style=\"text-align: left\">\r\n\t<h2>Welcome [NAME].<\/h2>\r\n\t<p>\r\n\t\tYour research project <b>[MARKERTITLE]<\/b> has been added to the UBC\r\n\t\tOkanagan interactive map at ORS; if you register and log in using this\r\n\t\temail address ([EMAIL]), then you will become the owner of the map\r\n\t\tmarker containing your project details.\r\n\t<\/p>\r\n\tThe following is a preview of the details of your project as it\r\n\tcurrently appears on the website:\r\n\t<p>\r\n\t\t<i>[MARKERCONTENT]<\/i>\r\n\t<\/p>\r\n\t<p>Please visit the map and register at <a href=\"[SITEURL]\">[SITEURL]<\/a>. Once you\r\n\t\tregister you can add and edit details about your project and include\r\n\t\tmedia such as video or photos. If you have any difficulties using the\r\n\t\tmap or editing your project, please feel to contact us at\r\n\t\t[HELPEMAIL].<\/p>\r\n\t<p>\r\n\t\tThank you. <small>[FROMNAME] - [FROMEMAIL]<\/small>\r\n\t<\/p>\r\n<\/div>",
+            "fromEmailName": "admin@geolive.ca",
+            "fromEmail": "Geolive",
+            "helpEmail": "help@geolive.ca",
+            "siteUrl": "http:\/\/firelight.geolive.ca",
+            "siteName": "Firelight",
+            "emailAttribute": [
+                {
+                    "visibility": "public",
+                    "tableId": "2",
+                    "tableName": "emailerAttributes",
+                    "tableSuffix": "_5220",
+                    "title": "email",
+                    "label": "Community Members Email Address",
+                    "description": "",
+                    "fieldType": "text",
+                    "color": "#FFFFFF",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "input",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": 0,
+                            "limitMaxWords": 0,
+                            "allowHtml": false,
+                            "allowMedia": true,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": true,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                }
+            ],
+            "nameAttribute": [
+                {
+                    "visibility": "public",
+                    "tableId": "2",
+                    "tableName": "emailerAttributes",
+                    "tableSuffix": "_5220",
+                    "title": "name",
+                    "label": "Comunity Member's Name",
+                    "description": "",
+                    "fieldType": "text",
+                    "color": "#FFFFFF",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "input",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": 0,
+                            "limitMaxWords": 0,
+                            "allowHtml": false,
+                            "allowMedia": true,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": true,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                }
+            ],
+            "enableEmailer": false,
+            "createAccount": false,
+            "debugEmailAddresses": "nickblackwell82@gmail.com, jon.corbett@gmail.com",
+            "moderatorEmailAddresses": "nickblackwell82@gmail.com, jon.corbett@gmail.com"
+        }
+    },
+    "plugin.31": {
+        "name": "Custom Events",
+        "instance": "CustomEvents",
+        "parameters": {},
+        "events": []
+    },
+    "plugin.32": {
+        "name": "Pusher Message Server",
+        "instance": "PusherMessages",
+        "parameters": "_PusherMessages.json"
+    },
+    "plugin.33": {
+        "name": "Language",
+        "instance": "Language",
+        "parameters": {}
+    },
+    "plugin.34": {
+        "name": "Slack Monitor",
+        "instance": "SlackMonitor",
+        "parameters": "_SlackMonitor.json"
+    },
+    "plugin.35": {
+        "name": "Deploy",
+        "instance": "Deploy",
+        "parameters": "_Deploy.json"
+    },
+    "plugin.36": {
+        "name": "Email Moderate",
+        "instance": "EmailModerate",
+        "parameters": {
+            "moderator": [
+                "nickblackwell82@gmail.com",
+                ""
+            ],
+            "enableEmails": true,
+            "fromEmailName": "Geolive Notifications",
+            "fromEmail": "admin@geolive.ca",
+            "siteUrl": "https:\/\/firelight.geolive.ca",
+            "siteName": "Firelight",
+            "formatEmailScript": "plugin.EmailModerate.36.formatEmailScript.js",
+            "formatVariablesScript": "plugin.EmailModerate.36.formatVariablesScript.js"
+        }
+    },
+    "plugin.37": {
+        "name": "Email",
+        "instance": "Email",
+        "parameters": {}
+    },
+    "widget.69": {
+        "name": "Custom Behavior Script",
+        "instance": "CustomBehaviorScript",
+        "parameters": {
+            "customScript": "widget.CustomBehaviorScript.69.customScript.js",
+            "widgetTitle": "Cluster Icons",
+            "readAccess": "public"
+        }
+    },
+    "widget.70": {
+        "name": "Attribute Cloud",
+        "instance": "AttributesCloud",
+        "parameters": {
+            "tabLabel": "Year",
+            "className": "",
+            "showDemoTags": false,
+            "demoTagsMinimum": 10,
+            "cloudResults": 30,
+            "tabColor": "rgb(100, 149, 237)",
+            "fontColor": "black",
+            "showItemCount": true,
+            "scaleItemsWithCount": true,
+            "scaleItemsMax": 25,
+            "scaleItemsMin": 12,
+            "hideEmptyPredefinedValues": true,
+            "showValuesOutsidePredefined": true,
+            "attributeSelection": [
+                {
+                    "visibility": "public",
+                    "tableId": "3",
+                    "tableName": "featureAttributes",
+                    "tableSuffix": "_6533",
+                    "title": "year",
+                    "label": "Year",
+                    "description": "",
+                    "fieldType": "text",
+                    "color": "rgb(undefined, undefined, undefined)",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "input",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": 0,
+                            "limitMaxWords": 0,
+                            "allowHtml": false,
+                            "allowMedia": true,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": true,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                }
+            ],
+            "cloudMetadata": [],
+            "formatCloudScript": "",
+            "formatTagScript": "widget.AttributesCloud.70.formatTagScript.js",
+            "formatTabButtonScript": "",
+            "onSelectionChangedScript": "widget.AttributesCloud.70.onSelectionChangedScript.js",
+            "sendNotifications": false,
+            "widgetTitle": "",
+            "readAccess": "community-member"
+        }
+    },
+    "widget.71": {
+        "name": "Attr CSV Export",
+        "instance": "AttributesCSVExport",
+        "parameters": {
+            "downloadImage": [],
+            "uploadImage": [],
+            "controlColor": "rgb(159, 0, 159)",
+            "exportMetadata": {
+                "fields": {
+                    "item id": "mapitem.id",
+                    "item owner id": "mapitem.uid",
+                    "item owner name": {
+                        "field": "mapitem.uid",
+                        "formatter": "useridtoname"
+                    },
+                    "item owner email": {
+                        "field": "mapitem.uid",
+                        "formatter": "useridtoemail"
+                    },
+                    "layer id": "layer.id",
+                    "layer title": "layer.name",
+                    "title": "mapitem.name",
+                    "coordinates": {
+                        "field": "mapitem.coordinates",
+                        "formatter": "coordinates"
+                    },
+                    "description": {
+                        "field": "mapitem.description",
+                        "formatter": "htmltoplaintext"
+                    },
+                    "image count": {
+                        "field": "mapitem.description",
+                        "formatter": "countimages"
+                    },
+                    "url": {
+                        "field": "mapitem.id",
+                        "formatter": "idtourl"
+                    },
+                    "created date": "mapitem.creationDate",
+                    "last modification date": "mapitem.modificationDate",
+                    "last editor": {
+                        "field": "mapitem.id",
+                        "formatter": "itemeditors"
+                    },
+                    "edit count": {
+                        "field": "mapitem.id",
+                        "formatter": "itemeditcount"
+                    },
+                    "read access": "mapitem.readAccess",
+                    "item views": "mapitem.views",
+                    "Comunity Member's Name": {
+                        "field": "attributes.2.name",
+                        "formatter": "attributes.text"
+                    },
+                    "Community Members Email Address": {
+                        "field": "attributes.2.email",
+                        "formatter": "attributes.text"
+                    },
+                    "Activity Code": {
+                        "field": "attributes.3.activityCode",
+                        "formatter": "attributes.text"
+                    },
+                    "Activity": {
+                        "field": "attributes.3.activity",
+                        "formatter": "attributes.text"
+                    },
+                    "Year": {
+                        "field": "attributes.3.year",
+                        "formatter": "attributes.text"
+                    }
+                },
+                "order": {
+                    "layer id": "ASC",
+                    "item id": "ASC"
+                }
+            },
+            "showImport": false,
+            "tileIcon": [],
+            "exportEncoding": "ISO-8859-1",
+            "importEncoding": "ISO-8859-1",
+            "showImportEncoding": false,
+            "filename": "Geolive Export DATE[Y-m-d (H.i.s)]",
+            "widgetTitle": "",
+            "readAccess": "special",
+            "position": "RIGHT_CENTER"
+        }
+    },
+    "widget.74": {
+        "name": "Custom Control Script",
+        "instance": "CustomControlScript",
+        "parameters": {
+            "customScript": "widget.CustomControlScript.74.customScript.js",
+            "widgetTitle": "User Type Control",
+            "readAccess": "registered",
+            "position": "TOP_RIGHT"
+        }
+    },
+    "widget.76": {
+        "name": "Custom Behavior Script",
+        "instance": "CustomBehaviorScript",
+        "parameters": {
+            "customScript": "widget.CustomBehaviorScript.76.customScript.js",
+            "widgetTitle": "Needs User Role",
+            "readAccess": "no-role"
+        }
+    },
+    "widget.78": {
+        "name": "Cluster Behavior",
+        "instance": "ClusterBehaviors",
+        "parameters": {}
+    },
+    "widget.68": {
+        "name": "Attribute Wizard Builder",
+        "instance": "AttributeWizardBuilder",
+        "parameters": {
+            "templateName": "ProposalStatusTemplate",
+            "metadata": {
+                "class": "DescisionNode",
+                "_diagramState": {
+                    "x": -18,
+                    "y": 143
+                },
+                "children": [
+                    {
+                        "class": "Node",
+                        "_diagramState": {
+                            "x": -7,
+                            "y": 205
+                        }
+                    },
+                    {
+                        "title": "New Empty Step",
+                        "class": "AttributesTableNode",
+                        "fields": [
+                            []
+                        ],
+                        "_diagramState": {
+                            "x": 238,
+                            "y": 350
+                        },
+                        "children": [
+                            {
+                                "class": "Node",
+                                "_diagramState": {
+                                    "x": 294,
+                                    "y": 230
+                                }
+                            }
+                        ],
+                        "builderMetadata": {
+                            "positions": {
+                                "title": {
+                                    "modules": [
+                                        {
+                                            "type": "WizardSteps",
+                                            "config": {
+                                                "iconValue": [],
+                                                "className": "",
+                                                "manualValue": "1",
+                                                "width": 697,
+                                                "height": 280,
+                                                "labelMethod": "auto",
+                                                "elasticity": false,
+                                                "minHeight": 200,
+                                                "minWidth": 400,
+                                                "showSteps": false
+                                            }
+                                        }
+                                    ]
+                                },
+                                "content": {
+                                    "modules": [
+                                        {
+                                            "type": "WizardScriptElement",
+                                            "config": {
+                                                "script": "console.log(item);\nreturn '<span style=\"'+\n    'text-align: left; '+\n    'font-weight: 100; '+\n    'display: block;'+\n'\"><span style=\"font-size:20px\">Project Proposal Status: Proposal '+item.getId()+'<\/span>'+\n'<p>Here you can see the status of a proposal<\/p><br><\/span>';"
+                                            }
+                                        },
+                                        {
+                                            "type": "WizardIconizedScriptSelect",
+                                            "config": {
+                                                "icons": [
+                                                    "components\/com_geolive\/users_files\/user_files_680\/Uploads\/mqn_[G]_6Zc_8fs_[ImAgE].png",
+                                                    "components\/com_geolive\/users_files\/user_files_680\/Uploads\/bPw_oqc_FQ2_[G]_[ImAgE].png",
+                                                    "components\/com_geolive\/users_files\/user_files_680\/Uploads\/[ImAgE]_iqc_XTt_[G]_LDt.png"
+                                                ],
+                                                "iconsetMetadata": {
+                                                    "onSelectScripts": {
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/rCV_[G]_cpZ_2EG_[ImAgE].png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/mqn_[G]_6Zc_8fs_[ImAgE].png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/bPw_oqc_FQ2_[G]_[ImAgE].png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/[ImAgE]_iqc_XTt_[G]_LDt.png": ""
+                                                    },
+                                                    "onSubmitScripts": {
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/rCV_[G]_cpZ_2EG_[ImAgE].png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/mqn_[G]_6Zc_8fs_[ImAgE].png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/bPw_oqc_FQ2_[G]_[ImAgE].png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/[ImAgE]_iqc_XTt_[G]_LDt.png": ""
+                                                    },
+                                                    "onRenderScripts": {
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/rCV_[G]_cpZ_2EG_[ImAgE].png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/mqn_[G]_6Zc_8fs_[ImAgE].png": "asset.parentNode.setAttribute('data-label','Submitted and Pending');",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/bPw_oqc_FQ2_[G]_[ImAgE].png": "asset.parentNode.setAttribute('data-label','Under Lands Department Review');",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/[ImAgE]_iqc_XTt_[G]_LDt.png": "asset.parentNode.setAttribute('data-label','Approved');"
+                                                    }
+                                                },
+                                                "initSelectedScript": "widget.AttributeWizardBuilder.68.metadata.children.1.builderMetadata.positions.content.modules.1.config.initSelectedScript.js",
+                                                "className": "prop-status",
+                                                "requireSelection": true
+                                            }
+                                        }
+                                    ]
+                                },
+                                "footer": {
+                                    "modules": []
+                                },
+                                "menu": {
+                                    "modules": []
+                                }
+                            },
+                            "positionList": [
+                                "title",
+                                "content",
+                                "footer",
+                                "menu"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "beforeSubmitScript": "",
+            "onCreateScript": "",
+            "onUpdateScript": "",
+            "onSaveScript": "",
+            "widgetTitle": "Proposal Status",
+            "readAccess": "public"
+        }
+    },
+    "widget.67": {
+        "name": "Attribute Wizard Builder",
+        "instance": "AttributeWizardBuilder",
+        "parameters": {
+            "templateName": "ProcessProposalTemplate",
+            "metadata": {
+                "class": "DescisionNode",
+                "_diagramState": {
+                    "x": 55,
+                    "y": 130
+                },
+                "children": [
+                    {
+                        "class": "Node",
+                        "_diagramState": {
+                            "x": 66,
+                            "y": 192
+                        }
+                    },
+                    {
+                        "title": "New Empty Step",
+                        "class": "AttributesTableNode",
+                        "fields": [
+                            []
+                        ],
+                        "_diagramState": {
+                            "x": 352,
+                            "y": 212
+                        },
+                        "children": [
+                            {
+                                "class": "Node",
+                                "_diagramState": {
+                                    "x": 518,
+                                    "y": 202
+                                }
+                            }
+                        ],
+                        "builderMetadata": {
+                            "positions": {
+                                "title": {
+                                    "modules": [
+                                        {
+                                            "type": "WizardSteps",
+                                            "config": {
+                                                "iconValue": [],
+                                                "className": "",
+                                                "manualValue": "1",
+                                                "width": 697,
+                                                "height": 250,
+                                                "labelMethod": "auto",
+                                                "elasticity": false,
+                                                "minHeight": 200,
+                                                "minWidth": 400,
+                                                "showSteps": true
+                                            }
+                                        }
+                                    ]
+                                },
+                                "content": {
+                                    "modules": [
+                                        {
+                                            "type": "WizardStepTitle",
+                                            "config": {
+                                                "className": "",
+                                                "text": "<span style=\"\n    text-align: left;\n    font-weight: 100;\n    display: block;\n\"><span style=\"font-size:20px\">Process Proposal<\/span>\n<p>Lands Department members can process pending proposals submitted by proponents<\/p><br><\/span>"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "footer": {
+                                    "modules": [
+                                        {
+                                            "type": "WizardButtons",
+                                            "config": {
+                                                "className": "WizardFooter",
+                                                "reduceOpacity": false,
+                                                "onCompleteScript": "widget.AttributeWizardBuilder.67.metadata.children.1.builderMetadata.positions.footer.modules.0.config.onCompleteScript.js"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "menu": {
+                                    "modules": []
+                                }
+                            },
+                            "positionList": [
+                                "title",
+                                "content",
+                                "footer",
+                                "menu"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "beforeSubmitScript": "",
+            "onCreateScript": "",
+            "onUpdateScript": "",
+            "onSaveScript": "",
+            "widgetTitle": "Process Proposal",
+            "readAccess": "public"
+        }
+    },
+    "widget.72": {
+        "name": "User Wizard Builder",
+        "instance": "UserWizardBuilder",
+        "parameters": {
+            "metadata": {
+                "class": "DescisionNode",
+                "_diagramState": {
+                    "x": -143,
+                    "y": 206
+                },
+                "children": [
+                    {
+                        "class": "Node",
+                        "_diagramState": {
+                            "x": -132,
+                            "y": 268
+                        }
+                    },
+                    {
+                        "title": "New Empty Step",
+                        "class": "AttributesTableNode",
+                        "fields": [
+                            []
+                        ],
+                        "_diagramState": {
+                            "x": 177,
+                            "y": 221
+                        },
+                        "children": [
+                            {
+                                "class": "Node",
+                                "_diagramState": {
+                                    "x": 419,
+                                    "y": 280
+                                }
+                            }
+                        ],
+                        "builderMetadata": {
+                            "positions": {
+                                "title": {
+                                    "modules": [
+                                        {
+                                            "type": "WizardSteps",
+                                            "config": {
+                                                "iconValue": [],
+                                                "className": "",
+                                                "manualValue": "1",
+                                                "width": 594,
+                                                "height": 250,
+                                                "labelMethod": "auto",
+                                                "elasticity": false,
+                                                "minHeight": 200,
+                                                "minWidth": 400,
+                                                "showSteps": false
+                                            }
+                                        }
+                                    ]
+                                },
+                                "content": {
+                                    "modules": [
+                                        {
+                                            "type": "WizardStepTitle",
+                                            "config": {
+                                                "className": "",
+                                                "text": "<span style=\"text-align: left; font-weight: 100; display: block;\"><span style=\"font-size:20px\">\nYour role<\/span>\n<p><\/p><br><\/span>"
+                                            }
+                                        },
+                                        {
+                                            "type": "WizardIconizedScriptSelect",
+                                            "config": {
+                                                "icons": [
+                                                    "components\/com_geolive\/users_files\/user_files_680\/Uploads\/83J_dwW_[G]_bdd_[ImAgE].png",
+                                                    "components\/com_geolive\/users_files\/user_files_680\/Uploads\/AfX_[ImAgE]_sq7_Pi8_[G].png",
+                                                    "components\/com_geolive\/users_files\/user_files_680\/Uploads\/DLD_HPQ_[G]_[ImAgE]_nK3.png"
+                                                ],
+                                                "iconsetMetadata": {
+                                                    "onSelectScripts": {
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/83J_dwW_[G]_bdd_[ImAgE].png": "(new SaveAttributeItemValuesQuery(GeoliveClient.getId(), 'user', 'userAttributes', {isCommunityMember:true, isProponent:false, isLandsDepartment:false})).addEvent('success',function(){\nwindow.location.reload();\n}).execute();\n\n",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/AfX_[ImAgE]_sq7_Pi8_[G].png": "(new SaveAttributeItemValuesQuery(GeoliveClient.getId(), 'user', 'userAttributes', {isCommunityMember:false, isProponent:true, isLandsDepartment:false})).addEvent('success',function(){\nwindow.location.reload();\n}).execute();\n\n",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/DLD_HPQ_[G]_[ImAgE]_nK3.png": "(new SaveAttributeItemValuesQuery(GeoliveClient.getId(), 'user', 'userAttributes', {isCommunityMember:false, isProponent:false, isLandsDepartment:true})).addEvent('success',function(){\nwindow.location.reload();\n}).execute();\n\n"
+                                                    },
+                                                    "onSubmitScripts": {
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/83J_dwW_[G]_bdd_[ImAgE].png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/AfX_[ImAgE]_sq7_Pi8_[G].png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/DLD_HPQ_[G]_[ImAgE]_nK3.png": ""
+                                                    },
+                                                    "onRenderScripts": {
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/83J_dwW_[G]_bdd_[ImAgE].png": "asset.parentNode.setAttribute('data-label','Community Member');",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/AfX_[ImAgE]_sq7_Pi8_[G].png": "asset.parentNode.setAttribute('data-label','Proponent');",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/DLD_HPQ_[G]_[ImAgE]_nK3.png": "asset.parentNode.setAttribute('data-label','Lands Department');"
+                                                    }
+                                                },
+                                                "initSelectedScript": "widget.UserWizardBuilder.72.metadata.children.1.builderMetadata.positions.content.modules.1.config.initSelectedScript.js",
+                                                "className": "",
+                                                "requireSelection": true
+                                            }
+                                        }
+                                    ]
+                                },
+                                "footer": {
+                                    "modules": []
+                                },
+                                "menu": {
+                                    "modules": []
+                                }
+                            },
+                            "positionList": [
+                                "title",
+                                "content",
+                                "footer",
+                                "menu"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "beforeSubmitScript": "",
+            "onCreateScript": "",
+            "onUpdateScript": "",
+            "onSaveScript": "",
+            "templateName": "UserTemplate",
+            "widgetTitle": "User Roles",
+            "readAccess": "public"
+        }
+    },
+    "widget.73": {
+        "name": "Login Wizard Builder",
+        "instance": "LoginWizardBuilder",
+        "parameters": {
+            "metadata": {
+                "class": "DescisionNode",
+                "_diagramState": {
+                    "x": -320,
+                    "y": 254
+                },
+                "children": [
+                    {
+                        "class": "Node",
+                        "_diagramState": {
+                            "x": -309,
+                            "y": 316
+                        }
+                    },
+                    {
+                        "title": "Register",
+                        "class": "AttributesTableNode",
+                        "fields": [
+                            []
+                        ],
+                        "_diagramState": {
+                            "x": 84,
+                            "y": 129
+                        },
+                        "children": [
+                            {
+                                "class": "Node",
+                                "_diagramState": {
+                                    "x": 436,
+                                    "y": 338
+                                }
+                            },
+                            {
+                                "title": "Login",
+                                "class": "AttributesTableNode",
+                                "fields": [
+                                    []
+                                ],
+                                "_diagramState": {
+                                    "x": 724,
+                                    "y": 388
+                                },
+                                "children": [
+                                    {
+                                        "class": "Node",
+                                        "_diagramState": {
+                                            "x": 826,
+                                            "y": 307
+                                        }
+                                    }
+                                ],
+                                "builderMetadata": {
+                                    "positions": {
+                                        "title": {
+                                            "modules": [
+                                                {
+                                                    "type": "WizardSteps",
+                                                    "config": {
+                                                        "iconValue": [],
+                                                        "className": "",
+                                                        "manualValue": "1",
+                                                        "width": 349,
+                                                        "height": 225,
+                                                        "labelMethod": "auto",
+                                                        "elasticity": false,
+                                                        "minHeight": 200,
+                                                        "minWidth": 400,
+                                                        "showSteps": false
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "content": {
+                                            "modules": [
+                                                {
+                                                    "type": "WizardStepTitle",
+                                                    "config": {
+                                                        "className": "",
+                                                        "text": "<span style=\"text-align: left; font-weight: 100; display: block;\"><span style=\"font-size:20px\">\nLogin<\/span>\n<p><\/p><br><\/span>"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "WizardLogin",
+                                                    "config": {
+                                                        "className": ""
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "footer": {
+                                            "modules": []
+                                        },
+                                        "menu": {
+                                            "modules": []
+                                        }
+                                    },
+                                    "positionList": [
+                                        "title",
+                                        "content",
+                                        "footer",
+                                        "menu"
+                                    ]
+                                }
+                            }
+                        ],
+                        "builderMetadata": {
+                            "positions": {
+                                "title": {
+                                    "modules": [
+                                        {
+                                            "type": "WizardSteps",
+                                            "config": {
+                                                "iconValue": [],
+                                                "className": "",
+                                                "manualValue": "1",
+                                                "width": 525,
+                                                "height": 675,
+                                                "labelMethod": "auto",
+                                                "elasticity": true,
+                                                "minHeight": 200,
+                                                "minWidth": 400,
+                                                "showSteps": false
+                                            }
+                                        }
+                                    ]
+                                },
+                                "content": {
+                                    "modules": [
+                                        {
+                                            "type": "WizardStepTitle",
+                                            "config": {
+                                                "className": "",
+                                                "text": "<span style=\"text-align: left; font-weight: 100; display: block;\"><span style=\"font-size:20px\">\nRegister to access mapping service<\/span>\n<p><\/p><br><\/span>"
+                                            }
+                                        },
+                                        {
+                                            "type": "WizardScriptElement",
+                                            "config": {
+                                                "script": "var login= new Element('label', {html:'Already have an account?', 'class':'login-button-text', events:{\n    click:function(){\n        \/\/goto next step\n        wizard.displayNext();\n    }\n}});\n\/\/login.appendChild(new Element('br'));\nlogin.appendChild(new Element('button',{html:'Login'}));\nreturn login;"
+                                            }
+                                        },
+                                        {
+                                            "type": "WizardStepTitle",
+                                            "config": {
+                                                "className": "",
+                                                "text": "<span style=\"text-align: left; font-weight: 100; display: block;\"><span style=\"font-size:20px\">\nCreate an account<\/span>\n<p><\/p><br><\/span>"
+                                            }
+                                        },
+                                        {
+                                            "type": "WizardIconizedScriptSelect",
+                                            "config": {
+                                                "icons": [
+                                                    "components\/com_geolive\/users_files\/user_files_680\/Uploads\/83J_dwW_[G]_bdd_[ImAgE].png",
+                                                    "components\/com_geolive\/users_files\/user_files_680\/Uploads\/AfX_[ImAgE]_sq7_Pi8_[G].png",
+                                                    "components\/com_geolive\/users_files\/user_files_680\/Uploads\/DLD_HPQ_[G]_[ImAgE]_nK3.png"
+                                                ],
+                                                "iconsetMetadata": {
+                                                    "onSelectScripts": {
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/oFs_X4a_[ImAgE]_[G]_QI0.png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/Y40_6sW_[G]_[ImAgE]_Sl0.png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/7qx_[ImAgE]_[G]_5sS_Itd.png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/83J_dwW_[G]_bdd_[ImAgE].png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/AfX_[ImAgE]_sq7_Pi8_[G].png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/DLD_HPQ_[G]_[ImAgE]_nK3.png": ""
+                                                    },
+                                                    "onSubmitScripts": {
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/oFs_X4a_[ImAgE]_[G]_QI0.png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/Y40_6sW_[G]_[ImAgE]_Sl0.png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/7qx_[ImAgE]_[G]_5sS_Itd.png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/83J_dwW_[G]_bdd_[ImAgE].png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/AfX_[ImAgE]_sq7_Pi8_[G].png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/DLD_HPQ_[G]_[ImAgE]_nK3.png": ""
+                                                    },
+                                                    "onRenderScripts": {
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/oFs_X4a_[ImAgE]_[G]_QI0.png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/Y40_6sW_[G]_[ImAgE]_Sl0.png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/7qx_[ImAgE]_[G]_5sS_Itd.png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/83J_dwW_[G]_bdd_[ImAgE].png": "asset.parentNode.setAttribute('data-label','Community Member');",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/AfX_[ImAgE]_sq7_Pi8_[G].png": "asset.parentNode.setAttribute('data-label','Proponent');",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/DLD_HPQ_[G]_[ImAgE]_nK3.png": "asset.parentNode.setAttribute('data-label','Lands Department');"
+                                                    }
+                                                },
+                                                "initSelectedScript": "widget.LoginWizardBuilder.73.metadata.children.1.builderMetadata.positions.content.modules.3.config.initSelectedScript.js",
+                                                "className": "register-user-role",
+                                                "requireSelection": true
+                                            }
+                                        },
+                                        {
+                                            "type": "WizardRegistration",
+                                            "config": {
+                                                "className": "registration-left",
+                                                "onSuccessfulRegistrationScript": "widget.LoginWizardBuilder.73.metadata.children.1.builderMetadata.positions.content.modules.4.config.onSuccessfulRegistrationScript.js",
+                                                "formatRegistrationFieldsScript": "widget.LoginWizardBuilder.73.metadata.children.1.builderMetadata.positions.content.modules.4.config.formatRegistrationFieldsScript.js"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "footer": {
+                                    "modules": []
+                                },
+                                "menu": {
+                                    "modules": []
+                                }
+                            },
+                            "positionList": [
+                                "title",
+                                "content",
+                                "footer",
+                                "menu"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "beforeSubmitScript": "",
+            "onCreateScript": "",
+            "onUpdateScript": "",
+            "onSaveScript": "",
+            "templateName": "LoginWizard",
+            "widgetTitle": "",
+            "readAccess": "public"
+        }
+    },
+    "widget.63": {
+        "name": "Flexible Height Widget",
+        "instance": "FlexibleHeight",
+        "parameters": {
+            "offset": 370,
+            "customScript": "",
+            "widgetTitle": "",
+            "readAccess": "public"
+        }
+    },
+    "widget.64": {
+        "name": "Custom CSS",
+        "instance": "CSS",
+        "parameters": {
+            "customCSS": "widget.CSS.64.customCSS.css",
+            "widgetTitle": "",
+            "readAccess": "public"
+        }
+    },
+    "widget.65": {
+        "name": "Proposal Wizard Builder",
+        "instance": "ProposalWizardBuilder",
+        "parameters": {
+            "metadata": {
+                "class": "DescisionNode",
+                "_diagramState": {
+                    "x": -159,
+                    "y": 222
+                },
+                "children": [
+                    {
+                        "class": "Node",
+                        "_diagramState": {
+                            "x": -148,
+                            "y": 284
+                        }
+                    },
+                    {
+                        "title": "Intro",
+                        "class": "AttributesTableNode",
+                        "fields": [
+                            []
+                        ],
+                        "_diagramState": {
+                            "x": 155,
+                            "y": 227
+                        },
+                        "children": [
+                            {
+                                "class": "Node",
+                                "_diagramState": {
+                                    "x": 447,
+                                    "y": 349
+                                }
+                            },
+                            {
+                                "title": "Spatial",
+                                "class": "AttributesTableNode",
+                                "fields": [
+                                    []
+                                ],
+                                "_diagramState": {
+                                    "x": 642,
+                                    "y": 202
+                                },
+                                "children": [
+                                    {
+                                        "class": "Node",
+                                        "_diagramState": {
+                                            "x": 934,
+                                            "y": 324
+                                        }
+                                    }
+                                ],
+                                "builderMetadata": {
+                                    "positions": {
+                                        "title": {
+                                            "modules": [
+                                                {
+                                                    "type": "WizardSteps",
+                                                    "config": {
+                                                        "iconValue": [],
+                                                        "className": "",
+                                                        "manualValue": "1",
+                                                        "width": 601,
+                                                        "height": 501,
+                                                        "labelMethod": "auto",
+                                                        "elasticity": false,
+                                                        "minHeight": 200,
+                                                        "minWidth": 400,
+                                                        "showSteps": true
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "content": {
+                                            "modules": [
+                                                {
+                                                    "type": "WizardStepTitle",
+                                                    "config": {
+                                                        "className": "",
+                                                        "text": "<span style=\"\n    text-align: left;\n    font-weight: 100;\n    display: block;\n\"><span style=\"font-size:20px\">Spatial Feature Documents<\/span>\n<p>You can attach various spatial feature documents to your proposal<\/p><br><\/span>"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "plugin.Firelight.WizardLayerField",
+                                                    "config": {
+                                                        "attributeFields": [
+                                                            {
+                                                                "visibility": "public",
+                                                                "tableId": "5",
+                                                                "tableName": "proposalAttributes",
+                                                                "tableSuffix": "_9189",
+                                                                "title": "spatialFeatures",
+                                                                "label": "Spatial Features",
+                                                                "description": "",
+                                                                "fieldType": "text",
+                                                                "color": "rgb(undefined, undefined, undefined)",
+                                                                "searchability": "public",
+                                                                "editability": "registered",
+                                                                "fieldTextOptions": {
+                                                                    "textType": "input",
+                                                                    "inputOptions": {
+                                                                        "buildAutocomplete": false,
+                                                                        "requireModeration": false,
+                                                                        "limitMaxChars": 0,
+                                                                        "limitMaxWords": 0,
+                                                                        "allowHtml": false,
+                                                                        "allowMedia": true,
+                                                                        "allowLinks": true
+                                                                    },
+                                                                    "listOptions": {
+                                                                        "takeSugesstions": true,
+                                                                        "buildTree": false,
+                                                                        "iconize": false,
+                                                                        "colorize": false
+                                                                    }
+                                                                },
+                                                                "allowMultiple": false
+                                                            }
+                                                        ],
+                                                        "label": "Spatial Data Files",
+                                                        "message": "add a description",
+                                                        "mandatory": true,
+                                                        "className": "",
+                                                        "toolbarPosition": "bottom"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "WizardScriptElement",
+                                                    "config": {
+                                                        "script": "\nvar ul=new Element('ul', {'class':''});\nvar li=new Element('li', {'class':'WizardButton disabled', style:'margin: 10px 0;'});\nvar txt=new Element('span', {'class':'btn-label', html:'preview'});\n\nul.appendChild(li);\nli.appendChild(txt);\n\n\nvar previous=moduleGroup[moduleIndex-1];\n\nvar hasFiles=function(){\n\n\tif(previous.TextFieldModule){\n\t\tvar value=previous.TextFieldModule.getValue();\n\n\t\treturn value&&(JSTextUtilities.ParseLinks(value).length>0);\n\n\t}\n\treturn false;\n};\n\nvar getFiles=function(){\n\n\treturn JSTextUtilities.ParseLinks(previous.TextFieldModule.getValue()).map(function(o){\n\t\treturn o.url;\n\t});\n};\n\nvar updateButton=function(){\n\tif(hasFiles()){\n\t\tli.removeClass('disabled');\n\t}else{\n\t\tli.addClass('disabled');\n\t}\n};\n\nli.addEvent('click',function(){\n\tif(!li.hasClass('disabled')){\n\n\n\n\t\tSpatialDocumentPreview.show(getFiles(), wizard, function(){\n\n\t\t\twizard.viewer.pushbox.win.setStyle('display', null);\n\t\t\twizard.viewer.pushbox.overlay.setStyle('display', null);\n\n\t\t});\n\n\t\twizard.viewer.pushbox.win.setStyle('display', 'none');\n\t\twizard.viewer.pushbox.overlay.setStyle('display', 'none');\n\n\t}\n});\n\nprevious.TextFieldModule.addEvent('change', updateButton);\nsetTimeout(function(){\n\tupdateButton();\n},500)\n\n\nreturn ul;"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "plugin.Attributes.WizardDescriptionAttribute",
+                                                    "config": {
+                                                        "attributeFields": [
+                                                            {
+                                                                "visibility": "public",
+                                                                "tableId": "5",
+                                                                "tableName": "proposalAttributes",
+                                                                "tableSuffix": "_9189",
+                                                                "title": "documents",
+                                                                "label": "Documents",
+                                                                "description": "",
+                                                                "fieldType": "text",
+                                                                "color": "rgb(undefined, undefined, undefined)",
+                                                                "searchability": "public",
+                                                                "editability": "registered",
+                                                                "fieldTextOptions": {
+                                                                    "textType": "input",
+                                                                    "inputOptions": {
+                                                                        "buildAutocomplete": false,
+                                                                        "requireModeration": false,
+                                                                        "limitMaxChars": 0,
+                                                                        "limitMaxWords": 0,
+                                                                        "allowHtml": false,
+                                                                        "allowMedia": true,
+                                                                        "allowLinks": true
+                                                                    },
+                                                                    "listOptions": {
+                                                                        "takeSugesstions": true,
+                                                                        "buildTree": false,
+                                                                        "iconize": false,
+                                                                        "colorize": false
+                                                                    }
+                                                                },
+                                                                "allowMultiple": false
+                                                            }
+                                                        ],
+                                                        "label": "Additional Documents",
+                                                        "message": "add a description",
+                                                        "lines": 3,
+                                                        "mandatory": false,
+                                                        "showAudios": false,
+                                                        "showImages": true,
+                                                        "showDocuments": true,
+                                                        "showVideos": false,
+                                                        "className": "no-text",
+                                                        "maxChars": 0,
+                                                        "showExpandInput": false,
+                                                        "toolbarPosition": "bottom",
+                                                        "textFormatScript": ""
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "footer": {
+                                            "modules": [
+                                                {
+                                                    "type": "WizardButtons",
+                                                    "config": {
+                                                        "className": "WizardFooter",
+                                                        "reduceOpacity": false,
+                                                        "onCompleteScript": "widget.ProposalWizardBuilder.65.metadata.children.1.children.1.builderMetadata.positions.footer.modules.0.config.onCompleteScript.js"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "menu": {
+                                            "modules": []
+                                        }
+                                    },
+                                    "positionList": [
+                                        "title",
+                                        "content",
+                                        "footer",
+                                        "menu"
+                                    ]
+                                }
+                            }
+                        ],
+                        "builderMetadata": {
+                            "positions": {
+                                "title": {
+                                    "modules": [
+                                        {
+                                            "type": "WizardSteps",
+                                            "config": {
+                                                "iconValue": [],
+                                                "className": "",
+                                                "manualValue": "1",
+                                                "width": 599,
+                                                "height": 411,
+                                                "labelMethod": "auto",
+                                                "elasticity": false,
+                                                "minHeight": 200,
+                                                "minWidth": 400,
+                                                "showSteps": true
+                                            }
+                                        }
+                                    ]
+                                },
+                                "content": {
+                                    "modules": [
+                                        {
+                                            "type": "WizardStepTitle",
+                                            "config": {
+                                                "className": "",
+                                                "text": "<span style=\"\n    text-align: left;\n    font-weight: 100;\n    display: block;\n\"><span style=\"font-size:20px\">Project Proposal<\/span>\n<p>Registered Proponents are able to complete the proposal wizard. Proposal are reviewed and approved by Lands Department members<\/p><br><\/span>"
+                                            }
+                                        },
+                                        {
+                                            "type": "plugin.Attributes.WizardTextAttribute",
+                                            "config": {
+                                                "attributeFields": [
+                                                    {
+                                                        "visibility": "public",
+                                                        "tableId": "5",
+                                                        "tableName": "proposalAttributes",
+                                                        "tableSuffix": "_9189",
+                                                        "title": "title",
+                                                        "label": "Title",
+                                                        "description": "",
+                                                        "fieldType": "text",
+                                                        "color": "rgb(NaN, NaN, NaN)",
+                                                        "searchability": "public",
+                                                        "editability": "registered",
+                                                        "fieldTextOptions": {
+                                                            "textType": "input",
+                                                            "inputOptions": {
+                                                                "buildAutocomplete": false,
+                                                                "requireModeration": false,
+                                                                "limitMaxChars": 0,
+                                                                "limitMaxWords": 0,
+                                                                "allowHtml": false,
+                                                                "allowMedia": true,
+                                                                "allowLinks": true
+                                                            },
+                                                            "listOptions": {
+                                                                "takeSugesstions": true,
+                                                                "buildTree": false,
+                                                                "iconize": false,
+                                                                "colorize": false
+                                                            }
+                                                        },
+                                                        "allowMultiple": false
+                                                    }
+                                                ],
+                                                "className": "",
+                                                "label": "Project Title",
+                                                "message": "add a title for your proposal",
+                                                "lines": 1,
+                                                "maxChars": 0,
+                                                "mandatory": true,
+                                                "multiEntry": false,
+                                                "autocomplete": true,
+                                                "muliTemplate": "lines",
+                                                "multiMessage": "",
+                                                "formatter": "none",
+                                                "iconTint": "rgb(100, 149, 237)"
+                                            }
+                                        },
+                                        {
+                                            "type": "plugin.Attributes.WizardDescriptionAttribute",
+                                            "config": {
+                                                "attributeFields": [
+                                                    {
+                                                        "visibility": "public",
+                                                        "tableId": "5",
+                                                        "tableName": "proposalAttributes",
+                                                        "tableSuffix": "_9189",
+                                                        "title": "description",
+                                                        "label": "Description",
+                                                        "description": "",
+                                                        "fieldType": "text",
+                                                        "color": "rgb(undefined, undefined, undefined)",
+                                                        "searchability": "public",
+                                                        "editability": "registered",
+                                                        "fieldTextOptions": {
+                                                            "textType": "input",
+                                                            "inputOptions": {
+                                                                "buildAutocomplete": false,
+                                                                "requireModeration": false,
+                                                                "limitMaxChars": 0,
+                                                                "limitMaxWords": 0,
+                                                                "allowHtml": false,
+                                                                "allowMedia": true,
+                                                                "allowLinks": true
+                                                            },
+                                                            "listOptions": {
+                                                                "takeSugesstions": true,
+                                                                "buildTree": false,
+                                                                "iconize": false,
+                                                                "colorize": false
+                                                            }
+                                                        },
+                                                        "allowMultiple": false
+                                                    }
+                                                ],
+                                                "label": "Project Description",
+                                                "message": "add a description, you can attach documents and media",
+                                                "lines": 6,
+                                                "mandatory": true,
+                                                "showAudios": true,
+                                                "showImages": true,
+                                                "showDocuments": true,
+                                                "showVideos": true,
+                                                "className": "no-media",
+                                                "maxChars": 0,
+                                                "showExpandInput": true,
+                                                "toolbarPosition": "bottom",
+                                                "textFormatScript": ""
+                                            }
+                                        }
+                                    ]
+                                },
+                                "footer": {
+                                    "modules": [
+                                        {
+                                            "type": "WizardButtons",
+                                            "config": {
+                                                "className": "WizardFooter",
+                                                "reduceOpacity": false,
+                                                "onCompleteScript": "widget.ProposalWizardBuilder.65.metadata.children.1.builderMetadata.positions.footer.modules.0.config.onCompleteScript.js"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "menu": {
+                                    "modules": []
+                                }
+                            },
+                            "positionList": [
+                                "title",
+                                "content",
+                                "footer",
+                                "menu"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "beforeSubmitScript": "",
+            "onCreateScript": "",
+            "onUpdateScript": "",
+            "onSaveScript": "",
+            "widgetTitle": "",
+            "readAccess": "public",
+            "templateName": "MapItemTemplate"
+        }
+    },
+    "widget.77": {
+        "name": "Search Bar Tab",
+        "instance": "SearchBarTab",
+        "parameters": {
+            "tabColor": "rgb(100, 149, 237)",
+            "fontColor": "rgba(0,0,0)",
+            "showIcon": true,
+            "widgetTitle": "Proposal Tab",
+            "readAccess": "proponent",
+            "position": "RIGHT_CENTER",
+            "icon": [
+                "components\/com_geolive\/users_files\/user_files_680\/Uploads\/[G]_gVG_[ImAgE]_Dn_kmf.png"
+            ],
+            "iconActive": []
+        }
+    },
+    "widget.54": {
+        "name": "Session Behavior",
+        "instance": "Session",
+        "parameters": {}
+    },
+    "widget.62": {
+        "name": "Custom Behavior Script",
+        "instance": "CustomBehaviorScript",
+        "parameters": {
+            "customScript": "widget.CustomBehaviorScript.62.customScript.js",
+            "widgetTitle": "Always Login",
+            "readAccess": "guest"
+        }
+    },
+    "widget.50": {
+        "name": "Map Layers Widget",
+        "instance": "Layers",
+        "parameters": {}
+    },
+    "widget.51": {
+        "name": "Search Engine Optimization Helper",
+        "instance": "SearchEngineOptimizationHelper",
+        "parameters": {}
+    },
+    "widget.52": {
+        "name": "No Javascript Helper",
+        "instance": "NoJavascriptHelper",
+        "parameters": {}
+    },
+    "widget.53": {
+        "name": "Login Behavior",
+        "instance": "LoginWizard",
+        "parameters": {}
+    },
+    "widget.49": {
+        "name": "Attribute Cloud",
+        "instance": "AttributesCloud",
+        "parameters": {
+            "tabLabel": "(code temporary)",
+            "className": "",
+            "cloudTable": "featureAttributes",
+            "cloudField": "activityCode",
+            "showDemoTags": false,
+            "demoTagsMinimum": 10,
+            "cloudResults": 30,
+            "tabColor": "rgb(100, 149, 237)",
+            "fontColor": "rgb(0, 0, 0)",
+            "showItemCount": true,
+            "scaleItemsWithCount": true,
+            "scaleItemsMax": 25,
+            "scaleItemsMin": 12,
+            "hideEmptyPredefinedValues": true,
+            "showValuesOutsidePredefined": true,
+            "cloudMetadata": [],
+            "attributeSelection": [
+                {
+                    "visibility": "public",
+                    "tableId": "3",
+                    "tableName": "featureAttributes",
+                    "tableSuffix": "_6533",
+                    "title": "activityCode",
+                    "label": "Activity Code",
+                    "description": "",
+                    "fieldType": "text",
+                    "color": "#FFFFFF",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "input",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": 0,
+                            "limitMaxWords": 0,
+                            "allowHtml": false,
+                            "allowMedia": true,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": true,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                }
+            ],
+            "widgetTitle": "",
+            "readAccess": "special",
+            "formatCloudScript": "",
+            "formatTagScript": "",
+            "formatTabButtonScript": "",
+            "onSelectionChangedScript": "widget.AttributesCloud.49.onSelectionChangedScript.js",
+            "sendNotifications": false
+        }
+    },
+    "widget.66": {
+        "name": "Info-Window",
+        "instance": "InfoWindowBuilder",
+        "parameters": {
+            "metadata": {
+                "positions": {
+                    "title": {
+                        "modules": [
+                            {
+                                "type": "DefaultTitle",
+                                "config": {
+                                    "className": "",
+                                    "maxChars": 0
+                                }
+                            }
+                        ]
+                    },
+                    "content": {
+                        "modules": [
+                            {
+                                "type": "WizardScriptElement",
+                                "config": {
+                                    "script": "return null;\nvar ReserveQuery = new Class({\n            Extends: AjaxControlQuery,\n            initialize: function() {\n                this.parent(CoreAjaxUrlRoot, 'get_reserve_metadata', {\n                    plugin: 'Firelight',\n                    id:item.getId()\n                });\n            }\n        });\n\nvar ReserveModule=new Class({\nExtends:Module,\nprocess:function(){\n\n  var me=this;\n   (new ReserveQuery()).addEvent('success',function(response){\n\n      if(response.result.thumbnail){\n          me.node.appendChild(new Asset.image(response.result.thumbnail,{\n             styles:{\nwidth:response.result.thumbnailWidth+\"px\",height:response.result.thumbnailHeight+\"px\"\n               }\n          }))\n      }\n\n       me.fireEvent('load');\n   }).execute();\n\n\n}\n\n});\n\n\nreturn new ReserveModule(application, {});"
+                                }
+                            }
+                        ]
+                    },
+                    "footer": {
+                        "modules": []
+                    },
+                    "menu": {
+                        "modules": [
+                            {
+                                "type": "LayerSelect"
+                            },
+                            {
+                                "type": "MenuController"
+                            }
+                        ]
+                    }
+                },
+                "positionList": [
+                    "title",
+                    "content",
+                    "footer",
+                    "menu"
+                ]
+            },
+            "widgetTitle": "",
+            "readAccess": "public",
+            "templateName": "reserves"
+        }
+    },
+    "widget.33": {
+        "name": "Attr Search Bar",
+        "instance": "AttributesSearch",
+        "parameters": {
+            "position": "TOP_CENTER",
+            "barWidth": 699,
+            "locationSearch": true,
+            "showFilterBuilder": true,
+            "hoverTheme": false,
+            "themeLabel": "Theme",
+            "showCloud": true,
+            "cloudTable": "",
+            "cloudField": "",
+            "mapitemSearchLabel": "Placemarks",
+            "locationSearchLabel": "Locations",
+            "showDemoTags": false,
+            "demoTagsMinimum": 10,
+            "cloudResults": 30,
+            "searchColor": "rgb(232, 133, 36)",
+            "searchTintColor": "rgb(0,0,0)",
+            "clearColor": "#3a6ccf",
+            "clearTintColor": "rgb(0,0,0)",
+            "placeholderText": "Search Location, Items, Attributes...",
+            "searchUsers": false,
+            "widgetTitle": "search bar",
+            "readAccess": "public"
+        }
+    },
+    "widget.34": {
+        "name": "Google Controls",
+        "instance": "GoogleControl",
+        "parameters": {
+            "showStreetControl": true,
+            "streetControlPosition": "LEFT_TOP",
+            "showPanControl": true,
+            "panControlPosition": "LEFT_TOP",
+            "showZoomControl": true,
+            "zoomControl": "SMALL",
+            "zoomControlPosition": "LEFT_TOP",
+            "showMapTypeControl": true,
+            "mapType": "HORIZONTAL_BAR",
+            "mapTypePosition": "TOP_RIGHT",
+            "showMapScaleControl": true,
+            "mapScaleType": "DEFAULT",
+            "mapScalePosition": "BOTTOM_RIGHT",
+            "showMapOverviewControl": false,
+            "mapOverviewControlOpened": false,
+            "widgetTitle": "",
+            "readAccess": "public"
+        }
+    },
+    "widget.35": {
+        "name": "Tile Buttons",
+        "instance": "TileButtons",
+        "parameters": {
+            "sections": [
+                "fullscreen",
+                "home",
+                "",
+                "logout"
+            ],
+            "controlColor": "rgb(232, 133, 36)",
+            "discussionTag": false,
+            "iconSetReferenceName": "",
+            "markerSearch": true,
+            "tileIcon": [],
+            "groupIcon": [],
+            "position": "RIGHT_CENTER",
+            "offsetX": 100,
+            "offsetY": 100,
+            "tilePadding": 0,
+            "direction": "auto",
+            "markerSize": 41,
+            "tileSize": 50,
+            "showToolTips": true,
+            "fullscreenTip": false,
+            "homeTip": false,
+            "markerTip": false,
+            "loginTip": false,
+            "logoutTip": false,
+            "profileTip": false,
+            "markerIconset": [
+                "components\/com_geolive\/users_files\/user_files_680\/Uploads\/[ImAgE]_wBJ_4IB_[G]_DLI.png",
+                "components\/com_geolive\/users_files\/user_files_680\/Uploads\/f8N_[ImAgE]_MvW_FsV_[G].png",
+                "components\/com_geolive\/users_files\/user_files_680\/Uploads\/8UH_7cI_[G]_[ImAgE]_2f6.png",
+                "components\/com_geolive\/users_files\/user_files_680\/Uploads\/[ImAgE]_CWK_bHv_7tY_[G].png",
+                "components\/com_geolive\/users_files\/user_files_680\/Uploads\/Gmz_[G]_[ImAgE]_Q2P_68i.png"
+            ],
+            "layerMap": [],
+            "tipMap": [],
+            "filterLayerMappedIcons": true,
+            "iconsetMetadata": {
+                "layerMap": {
+                    "components\/com_geolive\/users_files\/user_files_680\/Uploads\/[ImAgE]_wBJ_4IB_[G]_DLI.png": 69,
+                    "components\/com_geolive\/users_files\/user_files_680\/Uploads\/f8N_[ImAgE]_MvW_FsV_[G].png": 67,
+                    "components\/com_geolive\/users_files\/user_files_680\/Uploads\/8UH_7cI_[G]_[ImAgE]_2f6.png": 66,
+                    "components\/com_geolive\/users_files\/user_files_680\/Uploads\/[ImAgE]_CWK_bHv_7tY_[G].png": 68,
+                    "components\/com_geolive\/users_files\/user_files_680\/Uploads\/Gmz_[G]_[ImAgE]_Q2P_68i.png": 58
+                },
+                "renderSettings": []
+            },
+            "widgetTitle": "",
+            "readAccess": "public",
+            "subControlColor": "rgb(100, 149, 237)",
+            "guestLoginDrag": true,
+            "onDragEndScript": "widget.TileButtons.35.onDragEndScript.js",
+            "useTipIconsetLayerTitle": false,
+            "formatTipScript": "",
+            "profileIcon": null,
+            "_raw_layerMap": null,
+            "_raw_tipMap": null
+        }
+    },
+    "widget.36": {
+        "name": "Info-Window",
+        "instance": "InfoWindowBuilder",
+        "parameters": {
+            "metadata": {
+                "positions": {
+                    "title": {
+                        "modules": [
+                            {
+                                "type": "DefaultTitle",
+                                "config": {
+                                    "className": "",
+                                    "maxChars": 0
+                                }
+                            }
+                        ]
+                    },
+                    "content": {
+                        "modules": [
+                            {
+                                "type": "DefaultDescription",
+                                "config": {
+                                    "className": "",
+                                    "imageWidth": 300,
+                                    "imageHeight": 240,
+                                    "multiImageWidth": 100,
+                                    "multiImageHeight": 75,
+                                    "portraitImageWidth": 75,
+                                    "portraitImageHeight": 100,
+                                    "autoArrange": true,
+                                    "oneLine": true,
+                                    "maxChars": 0,
+                                    "maxWidth": 0,
+                                    "showAudios": true,
+                                    "showVideos": true,
+                                    "showImages": true,
+                                    "showDocuments": true,
+                                    "showLinks": true,
+                                    "showExternalContent": true,
+                                    "embedPortrait": true,
+                                    "preferLocalContent": true,
+                                    "portraitClip": true
+                                }
+                            }
+                        ]
+                    },
+                    "footer": {
+                        "modules": [
+                            {
+                                "type": "DefaultEdit",
+                                "config": {
+                                    "className": "",
+                                    "dragConfirmMessage": "save new position",
+                                    "dragConfirm": false,
+                                    "geocodeMove": true,
+                                    "templateName": "MapItemTemplate"
+                                }
+                            }
+                        ]
+                    },
+                    "menu": {
+                        "modules": [
+                            {
+                                "type": "LayerSelect"
+                            },
+                            {
+                                "type": "MenuController"
+                            }
+                        ]
+                    }
+                },
+                "positionList": [
+                    "title",
+                    "content",
+                    "footer",
+                    "menu"
+                ]
+            },
+            "widgetTitle": "",
+            "readAccess": "public",
+            "templateName": "default"
+        }
+    },
+    "widget.37": {
+        "name": "Custom Behavior Script",
+        "instance": "CustomBehaviorScript",
+        "parameters": {
+            "customScript": "widget.CustomBehaviorScript.37.customScript.js",
+            "widgetTitle": "Custom Map Style",
+            "readAccess": "public"
+        }
+    },
+    "widget.38": {
+        "name": "Marker Wizard",
+        "instance": "WizardBuilder",
+        "parameters": {
+            "metadata": {
+                "class": "DescisionNode",
+                "_diagramState": {
+                    "x": -262,
+                    "y": 282
+                },
+                "children": [
+                    {
+                        "class": "Node",
+                        "_diagramState": {
+                            "x": -251,
+                            "y": 344
+                        }
+                    },
+                    {
+                        "title": "Community Member Data",
+                        "class": "AttributesTableNode",
+                        "fields": [
+                            []
+                        ],
+                        "_diagramState": {
+                            "x": 138,
+                            "y": 294
+                        },
+                        "children": [
+                            {
+                                "class": "Node",
+                                "_diagramState": {
+                                    "x": 324,
+                                    "y": 304
+                                }
+                            },
+                            {
+                                "title": "Item Details",
+                                "class": "AttributesTableNode",
+                                "fields": [
+                                    []
+                                ],
+                                "_diagramState": {
+                                    "x": 699,
+                                    "y": 261
+                                },
+                                "children": [
+                                    {
+                                        "class": "Node",
+                                        "_diagramState": {
+                                            "x": 1041,
+                                            "y": 447
+                                        }
+                                    }
+                                ],
+                                "builderMetadata": {
+                                    "positions": {
+                                        "title": {
+                                            "modules": [
+                                                {
+                                                    "type": "WizardSteps",
+                                                    "config": {
+                                                        "iconValue": [],
+                                                        "className": "",
+                                                        "manualValue": "1",
+                                                        "width": 699,
+                                                        "height": 459,
+                                                        "labelMethod": "auto",
+                                                        "elasticity": false,
+                                                        "minHeight": 200,
+                                                        "minWidth": 400,
+                                                        "showSteps": true
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "content": {
+                                            "modules": [
+                                                {
+                                                    "type": "WizardStepTitle",
+                                                    "config": {
+                                                        "className": "",
+                                                        "text": "<span style=\"\n    text-align: left;\n    font-weight: 100;\n    display: block;\n\"><span style=\"font-size:20px\">Map Item Details<\/span>\n<p>This section allows you to make changes to the content displayed on the map.<\/p><br><\/span>"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "WizardTitleField",
+                                                    "config": {
+                                                        "label": "Title",
+                                                        "message": "the title for this map item",
+                                                        "className": "",
+                                                        "maxChars": 0,
+                                                        "textFormatScript": ""
+                                                    }
+                                                },
+                                                {
+                                                    "type": "WizardDescriptionField",
+                                                    "config": {
+                                                        "label": "Description",
+                                                        "message": "the description for this map item",
+                                                        "lines": 5,
+                                                        "mandatory": true,
+                                                        "showAudios": true,
+                                                        "showImages": true,
+                                                        "showDocuments": false,
+                                                        "showVideos": true,
+                                                        "className": "",
+                                                        "maxChars": 0,
+                                                        "showExpandInput": "no",
+                                                        "toolbarPosition": "bottom",
+                                                        "textFormatScript": ""
+                                                    }
+                                                },
+                                                {
+                                                    "type": "WizardScriptElement",
+                                                    "config": {
+                                                        "script": ""
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "footer": {
+                                            "modules": [
+                                                {
+                                                    "type": "WizardButtons",
+                                                    "config": {
+                                                        "className": "WizardFooter",
+                                                        "reduceOpacity": false,
+                                                        "onCompleteScript": "widget.WizardBuilder.38.metadata.children.1.children.1.builderMetadata.positions.footer.modules.0.config.onCompleteScript.js"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "menu": {
+                                            "modules": []
+                                        }
+                                    },
+                                    "positionList": [
+                                        "title",
+                                        "content",
+                                        "footer",
+                                        "menu"
+                                    ]
+                                }
+                            }
+                        ],
+                        "builderMetadata": {
+                            "positions": {
+                                "title": {
+                                    "modules": [
+                                        {
+                                            "type": "WizardSteps",
+                                            "config": {
+                                                "iconValue": "",
+                                                "className": "",
+                                                "manualValue": "1",
+                                                "width": 548,
+                                                "height": 303,
+                                                "labelMethod": "auto",
+                                                "elasticity": false,
+                                                "minHeight": 284,
+                                                "minWidth": 400,
+                                                "showSteps": true
+                                            }
+                                        }
+                                    ]
+                                },
+                                "content": {
+                                    "modules": [
+                                        {
+                                            "type": "WizardStepTitle",
+                                            "config": {
+                                                "className": "",
+                                                "text": "<span style=\"\n    text-align: left;\n    font-weight: 100;\n    display: block;\n\"><span style=\"font-size:20px\">Community Member Details<\/span>\n<p>The community member associated with this map item is able to update and remove spatial data.<\/p><br><\/span>"
+                                            }
+                                        },
+                                        {
+                                            "type": "plugin.Attributes.WizardTextAttribute",
+                                            "config": {
+                                                "attributeFields": [
+                                                    {
+                                                        "visibility": "public",
+                                                        "tableId": "2",
+                                                        "tableName": "emailerAttributes",
+                                                        "tableSuffix": "_5220",
+                                                        "title": "name",
+                                                        "label": "Comunity Member's Name",
+                                                        "description": "",
+                                                        "fieldType": "text",
+                                                        "color": "#FFFFFF",
+                                                        "searchability": "public",
+                                                        "editability": "registered",
+                                                        "fieldTextOptions": {
+                                                            "textType": "input",
+                                                            "inputOptions": {
+                                                                "buildAutocomplete": false,
+                                                                "requireModeration": false,
+                                                                "limitMaxChars": 0,
+                                                                "limitMaxWords": 0,
+                                                                "allowHtml": false,
+                                                                "allowMedia": true,
+                                                                "allowLinks": true
+                                                            },
+                                                            "listOptions": {
+                                                                "takeSugesstions": true,
+                                                                "buildTree": false,
+                                                                "iconize": false,
+                                                                "colorize": false
+                                                            }
+                                                        },
+                                                        "allowMultiple": false
+                                                    }
+                                                ],
+                                                "className": "",
+                                                "label": "Community Member",
+                                                "message": "community member's name",
+                                                "lines": 1,
+                                                "maxChars": 0,
+                                                "mandatory": false,
+                                                "multiEntry": false,
+                                                "muliTemplate": "lines",
+                                                "multiMessage": "",
+                                                "formatter": "none",
+                                                "iconTint": "rgb(100, 149, 237)"
+                                            }
+                                        },
+                                        {
+                                            "type": "plugin.Attributes.WizardTextAttribute",
+                                            "config": {
+                                                "attributeFields": [
+                                                    {
+                                                        "visibility": "public",
+                                                        "tableId": "2",
+                                                        "tableName": "emailerAttributes",
+                                                        "tableSuffix": "_5220",
+                                                        "title": "email",
+                                                        "label": "Community Members Email Address",
+                                                        "description": "",
+                                                        "fieldType": "text",
+                                                        "color": "#FFFFFF",
+                                                        "searchability": "public",
+                                                        "editability": "registered",
+                                                        "fieldTextOptions": {
+                                                            "textType": "input",
+                                                            "inputOptions": {
+                                                                "buildAutocomplete": false,
+                                                                "requireModeration": false,
+                                                                "limitMaxChars": 0,
+                                                                "limitMaxWords": 0,
+                                                                "allowHtml": false,
+                                                                "allowMedia": true,
+                                                                "allowLinks": true
+                                                            },
+                                                            "listOptions": {
+                                                                "takeSugesstions": true,
+                                                                "buildTree": false,
+                                                                "iconize": false,
+                                                                "colorize": false
+                                                            }
+                                                        },
+                                                        "allowMultiple": false
+                                                    }
+                                                ],
+                                                "className": "",
+                                                "label": "Community Members Email",
+                                                "message": "community members's email address",
+                                                "lines": 1,
+                                                "maxChars": 0,
+                                                "mandatory": false,
+                                                "multiEntry": false,
+                                                "muliTemplate": "lines",
+                                                "multiMessage": "",
+                                                "formatter": "none",
+                                                "iconTint": "rgb(100, 149, 237)"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "footer": {
+                                    "modules": [
+                                        {
+                                            "type": "WizardButtons",
+                                            "config": {
+                                                "className": "WizardFooter",
+                                                "reduceOpacity": false,
+                                                "onCompleteScript": "widget.WizardBuilder.38.metadata.children.1.builderMetadata.positions.footer.modules.0.config.onCompleteScript.js"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "menu": {
+                                    "modules": []
+                                }
+                            },
+                            "positionList": [
+                                "title",
+                                "content",
+                                "footer",
+                                "menu"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "onCreateScript": "",
+            "onUpdateScript": "",
+            "onSaveScript": "",
+            "widgetTitle": "changed the label",
+            "readAccess": "public",
+            "beforeSubmitScript": ""
+        }
+    },
+    "widget.39": {
+        "name": "Legend",
+        "instance": "Legend",
+        "parameters": {
+            "position": "LEFT_BOTTOM",
+            "style": "GeoliveLegend.css",
+            "useIconSet": true,
+            "draggableIcons": true,
+            "startMinimized": true,
+            "showToggle": false,
+            "legendParams": [],
+            "iconSize": 52,
+            "defaultIcon": "DEFAULT",
+            "showEditLayerButtons": false,
+            "widgetTitle": "",
+            "readAccess": "public",
+            "editableLayerScript": "widget.Legend.39.editableLayerScript.js",
+            "guestLoginDrag": true,
+            "formatLayerScript": "",
+            "formatLayerPopoverScript": "",
+            "formatLegendScript": "",
+            "onDragEndScript": "widget.Legend.39.onDragEndScript.js"
+        }
+    },
+    "widget.40": {
+        "name": "Custom Behavior Script",
+        "instance": "CustomBehaviorScript",
+        "parameters": {
+            "customScript": "widget.CustomBehaviorScript.40.customScript.js",
+            "widgetTitle": "Firelight User Tools",
+            "readAccess": "public"
+        }
+    },
+    "widget.44": {
+        "name": "Emailer Tab",
+        "instance": "EmailerTab",
+        "parameters": {
+            "tabColor": "rgb(232, 133, 36)",
+            "fontColor": "rgb(255, 255, 255)",
+            "showIcon": true,
+            "widgetTitle": "",
+            "readAccess": "lands-department",
+            "position": "RIGHT_CENTER"
+        }
+    },
+    "widget.46": {
+        "name": "Attribute Cloud",
+        "instance": "AttributesCloud",
+        "parameters": {
+            "tabLabel": "Resources",
+            "className": "",
+            "cloudTable": "featureAttributes",
+            "cloudField": "activityCode",
+            "showDemoTags": false,
+            "demoTagsMinimum": 10,
+            "cloudResults": 30,
+            "tabColor": "rgb(0, 165, 131)",
+            "fontColor": "rgb(0,0,0)",
+            "showItemCount": true,
+            "scaleItemsWithCount": true,
+            "scaleItemsMax": 25,
+            "scaleItemsMin": 12,
+            "hideEmptyPredefinedValues": true,
+            "showValuesOutsidePredefined": false,
+            "cloudMetadata": [],
+            "attributeSelection": [
+                {
+                    "visibility": "public",
+                    "tableId": "3",
+                    "tableName": "featureAttributes",
+                    "tableSuffix": "_6533",
+                    "title": "activity",
+                    "label": "Activity",
+                    "description": "",
+                    "fieldType": "text",
+                    "color": "rgb(undefined, undefined, undefined)",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "input",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": 0,
+                            "limitMaxWords": 0,
+                            "allowHtml": false,
+                            "allowMedia": true,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": true,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                }
+            ],
+            "widgetTitle": "",
+            "readAccess": "community-member",
+            "formatCloudScript": "",
+            "formatTagScript": "",
+            "formatTabButtonScript": "",
+            "onSelectionChangedScript": "widget.AttributesCloud.46.onSelectionChangedScript.js",
+            "sendNotifications": false
+        }
+    }
+}

@@ -1,0 +1,10 @@
+a.brand:before {
+    background-image: url(../logo.png);
+    content: "";
+    width: 85px;
+    height: 45px;
+    position: relative;
+    background-size: auto 100%;
+    display: inline-block;
+    top: 6px;
+}

@@ -3247,17 +3247,6 @@ input[type="submit"].btn.btn-mini {
 }
 
 
-a.brand:before {
-    background-image: url("../logo.jpg");
-    content: "";
-    width: 85px;
-    height: 45px;
-    position: relative;
-    background-size: auto 100%;
-    display: inline-block;
-    top: 6px;
-}
-
 .navbar .brand:hover,
 .navbar .brand:focus {
 	text-decoration: none;

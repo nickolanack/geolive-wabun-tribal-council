@@ -38,6 +38,7 @@ $doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/template
 // Add Stylesheets
 $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/template.css');
 $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/pushmenu.css');
+$doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/js/custom.css');
 
 if ($this->countModules('position-7')) {
 	$doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/pushmenu.js');

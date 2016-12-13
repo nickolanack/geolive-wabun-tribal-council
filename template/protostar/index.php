@@ -31,14 +31,25 @@ if ($task == "edit" || $layout == "form") {
 	$fullWidth = 0;
 }
 
+include_once dirname(dirname(__DIR__)) . '/administrator/components/com_geolive/core.php';
+Behavior('mootools');
+Behavior('modal');
+
 // Add JavaScript Frameworks
 JHtml::_('bootstrap.framework');
 $doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/template.js');
 
 // Add Stylesheets
 $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/template.css');
-$doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/pushmenu.css');
-$doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/js/custom.css');
+$doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/custom.css');
+
+$host = $_SERVER['HTTP_HOST'];
+$domainCompomnents = explode('.', $host);
+$subdomain = $domainCompomnents[0];
+
+if (file_exists(__DIR__ . '/css/' . $subdomain . '.css')) {
+	$doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/' . $subdomain . '.css');
+}
 
 if ($this->countModules('position-7')) {
 	$doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/pushmenu.js');

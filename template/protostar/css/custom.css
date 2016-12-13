@@ -1,10 +1,66 @@
 a.brand:before {
     background-image: url(../logo.png);
     content: "";
-    width: 85px;
-    height: 45px;
+    width: 126px;
+    height: 115px;
     position: relative;
     background-size: auto 100%;
     display: inline-block;
     top: 6px;
+}
+
+
+.pushmenu>.pb-c {
+	background-color: white;
+	    height: initial;
+}
+#pushmenu {
+    margin: 0;
+}
+#aside {
+	margin: 0;
+	width: inherit;
+}
+
+#aside>.well {
+	margin: 0;
+	background-color: white;
+	box-shadow: none;
+	border:none;
+}
+
+.pushmenu #login-form {
+	width: 300px;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+
+.pushmenu input#modlgn-passwd, .pushmenu input#modlgn-username {
+	width: 175px;
+}
+
+
+button.btn.btn-primary, input.btn.btn-primary {
+    background-color: crimson;
+    border-radius: 0;
+    border: none;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    padding: 10px 25px;
+}
+
+
+
+h3#pushmenu-message, .site-title {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 100;
+   color: crimson;
+}
+
+h3#pushmenu-message{
+ 	font-size: 20px;
+	margin:0;
+	padding:10px;
+	text-align: center;
+	font-size:;
 }
